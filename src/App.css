@@ -1,0 +1,348 @@
+.news {
+  margin: 12px 50px 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.tabs button {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: none;
+  border: none;
+}
+
+.tabs button:hover {
+  background-color: #eee;
+}
+
+.tabs button.active {
+  background-color: #0645ad;
+  color: #fff;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.news-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.news-link {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+}
+
+.currency-item {
+  font-size: 14px;
+  margin: 12px 50px;
+}
+
+.currency-name {
+  font-weight: bold;
+  color: #000;
+}
+
+.currency-value {
+  color: #000;
+  margin-left: 4px;
+}
+
+.currency-change {
+  color: #888;
+  margin-left: 2px;
+}
+
+.header-item {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.header-link {
+  font-weight: bold;
+  color: #0645ad;
+}
+
+.search-bar-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 12px 50px;
+  background-color: #fff;
+}
+
+.yandex-logo {
+  height: 40px;
+  margin-right: 16px;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border: 2px solid #fc0;
+}
+
+.search-section {
+  flex: 1;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.search-button {
+  appearance: none;
+  border: 0;
+  background-color: #ffdb4d;
+  font-size: 20px;
+  width: 70px;
+  height: 44px;
+  padding: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: -6px;
+}
+
+.search-example div {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #000;
+}
+
+.search-example span {
+  color: #888;
+}
+
+.promo-link {
+  display: block;
+  margin: 12px 50px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.promo-link img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.main-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 12px 50px;
+}
+
+.column {
+  flex: 1;
+  max-width: 33.33%
+}
+
+.weather-title {
+  color: #0645ad;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.teleprogram-list {
+  margin-top: 12px;
+}
+
+.teleprogram-title {
+  color: #0645ad;
+}
+
+.teleprogram-link {
+  display: block;
+  color: #000;
+}
+
+.teleprogram-time {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.teleprogram-program {
+  color: #000;
+}
+
+.teleprogram-channel {
+  color: #888;
+  margin-left: 4px;
+}
+
+.tv-channel-item {
+  margin-bottom: 4px;
+}
+
+.tv-channel-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.tv-channel-icon {
+  margin-right: 6px;
+}
+
+.tv-channel-name {
+  font-weight: normal;
+  margin-right: 4px;
+}
+
+.tv-channel-category {
+  color: #888;
+}
+
+.visited-link-item {
+  margin-bottom: 4px;
+}
+
+.visited-link {
+  color: #000;
+}
+
+.visited-title {
+  font-weight: bold;
+}
+
+.visited-content {
+  color: #888;
+}
+
+/* ===== Адаптивность для разных экранов ===== */
+
+@media (max-width: 1200px) {
+  .main-blocks {
+    flex-direction: column;
+  }
+
+  .column {
+    max-width: 100%;
+  }
+
+  .search-bar-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .yandex-logo {
+    margin-bottom: 8px;
+    margin-right: 0;
+    align-self: center;
+  }
+
+  .search-form {
+    flex-direction: row;
+  }
+
+  .search-button {
+    width: 50px;
+    font-size: 18px;
+  }
+
+  .promo-link {
+    margin: 12px 20px;
+  }
+
+  .news, .currency-item, .main-blocks, .search-bar-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-button {
+    font-size: 16px;
+    width: 44px;
+    height: 40px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .weather {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .forecast {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-button {
+    margin-left: 0;
+    margin-top: 6px;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .main-blocks {
+    gap: 20px;
+  }
+
+  .currency-item {
+    margin: 12px 20px;
+  }
+
+  .promo-link img {
+    height: auto;
+    max-height: 160px;
+    object-fit: cover;
+  }
+}
