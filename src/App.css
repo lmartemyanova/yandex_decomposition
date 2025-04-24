@@ -1,11 +1,28 @@
 .container {
   width: 100%;
-  max-width: 1280px; /* Максимальная ширина для больших экранов */
-  padding: 0 24px;    /* "воздух" по краям */
-  margin: 0px 12px;     /* центрирование */
+  max-width: 1280px; 
+  padding: 0 24px;    
+  margin: 0px 12px;    
   margin-top: 12px;
 
 }
+
+/* top-section: TopNewsBlock, Currency, PromoBlock */
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 4px;
+  gap: 24px;
+}
+
+/* top-left: TopNewsBlock, Currency */
+
+.top-left {
+  margin-left: 0px;
+}
+
+/* TopNewsBlock | News */
 
 .news-tabs {
   display: flex;
@@ -57,8 +74,15 @@
   text-decoration: underline;
 }
 
+/* Currency */
+
+.currency-block {
+  display: flex;
+}
+
 .currency-item {
   font-size: 14px;
+  margin-right: 20px;
 }
 
 .currency-name {
@@ -76,6 +100,41 @@
   margin-left: 2px;
 }
 
+/* PromoBlock */
+
+.top-side {
+  display: flex;
+  justify-content: center;
+}
+
+.promo-block {
+  display: block;
+  align-items: center;
+  gap: 12px;
+}
+
+.promo-img {
+  width: 90px;
+  height: auto;
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-title {
+  font-weight: bold;
+  color: #0645ad;
+}
+
+.promo-subtitle {
+  color: #000;
+  font-size: 14px;
+}
+
+/* HeaderLinks */
+
 .header-item {
   display: inline-block;
   margin-right: 16px;
@@ -86,6 +145,8 @@
   color: #0645ad;
 }
 
+/* YandexLogo, HeaderLinks, SearchBar wrapper */
+
 .search-bar-wrapper {
   display: flex;
   align-items: center;
@@ -93,10 +154,14 @@
   background-color: #fff;
 }
 
+/* YandexLogo */
+
 .yandex-logo {
   height: 40px;
   margin-right: 16px;
 }
+
+/* SearchBar */
 
 .search-form {
   display: flex;
@@ -140,6 +205,8 @@
   color: #888;
 }
 
+/* PromoBanner */
+
 .promo-link {
   display: block;
   border-radius: 8px;
@@ -152,6 +219,8 @@
   border-radius: 8px;
 }
 
+/* Weather, VisitedLinks, MapItem, TeleprogramList, TvChannel wrapper */
+
 .main-blocks {
   display: flex;
   flex-wrap: wrap;
@@ -162,6 +231,8 @@
   flex: 1;
   max-width: 33.33%
 }
+
+/* Weather */
 
 .weather-title {
   color: #0645ad;
@@ -184,6 +255,42 @@
   flex-direction: column;
   font-size: 14px;
 }
+
+/* VisitedLinks */
+
+.visited-link-item {
+  margin-bottom: 4px;
+}
+
+.visited-link {
+  color: #000;
+}
+
+.visited-title {
+  font-weight: bold;
+}
+
+.visited-content {
+  color: #888;
+}
+
+/* MapItem */
+
+.map-block {
+  margin-bottom: 16px;
+}
+
+.map {
+  color: #0645ad;
+}
+
+.map-item {
+  display: block;
+  margin-top: 4px;
+  color: #000;
+}
+
+/* TeleprogramList */
 
 .teleprogram-list {
   margin-top: 12px;
@@ -212,6 +319,8 @@
   margin-left: 4px;
 }
 
+/* TvChannel */
+
 .tv-channel-item {
   margin-bottom: 4px;
 }
@@ -235,21 +344,6 @@
   color: #888;
 }
 
-.visited-link-item {
-  margin-bottom: 4px;
-}
-
-.visited-link {
-  color: #000;
-}
-
-.visited-title {
-  font-weight: bold;
-}
-
-.visited-content {
-  color: #888;
-}
 
 /* ===== Адаптивность для разных экранов ===== */
 
@@ -334,3 +428,4 @@
     padding-right: 50px;
   }
 }
+
